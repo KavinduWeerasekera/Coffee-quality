@@ -24,10 +24,11 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Build and push Docker image
+      working-directory: "./website 2"
       uses: docker/build-push-action@v4
       with:
-        context: "./website 2"
-        file: "./website 2/Dockerfile"
+        context: .
+        file: ./Dockerfile
         push: true
         tags: |
           ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:latest
