@@ -24,12 +24,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         
     - name: Build and push Docker image
-      working-directory: "./website 2"
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        file: ./Dockerfile
-        push: true
-        tags: |
-          ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:latest
-          ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:${{ github.sha }}
+      run: |
+        cd "website 2"
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:latest .
+        docker tag ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:latest ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:${{ github.sha }}
+        docker push ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/coffee-quality-website2:${{ github.sha }}
