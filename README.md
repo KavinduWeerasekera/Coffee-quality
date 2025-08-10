@@ -30,5 +30,14 @@ Frontend: React + Vite, Tailwind CSS, ShadCn UI ⚛️
 
 Backend: Flask 🐍
 
+<img width="1910" height="867" alt="image" src="https://github.com/user-attachments/assets/91f50508-9a3c-45e4-bffe-9ccbd48e0e3e" />
+
+<img width="1897" height="862" alt="image" src="https://github.com/user-attachments/assets/a6ef651f-d700-4d12-ba64-3a27692df8e6" />
+
+<img width="1898" height="858" alt="image" src="https://github.com/user-attachments/assets/b02954c6-449d-4425-aab3-b3012917727b" />
+
+
+
+
  # Docker & CI/CD 🐳
 Using a GitHub Actions workflow, we automated the Docker build and deployment process. When changes are made in the website2 folder, the Docker container updates automatically 🚀.
