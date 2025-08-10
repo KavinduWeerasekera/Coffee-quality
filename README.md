@@ -24,7 +24,7 @@
 
  # Website🌐
 
-A website was created for users to interact with our ML model:
+A website was created for users to interact with our ML model(Video Demo of the website is given in Coffee_quality_prediction_demo.mp4) :
 
 Frontend: React + Vite, Tailwind CSS, ShadCn UI ⚛️
 
